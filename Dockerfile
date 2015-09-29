@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 RUN apt-get update && apt-get install -y xvfb iceweasel
-RUN apt-get install -y ruby bundler
+RUN apt-get install -y ruby bundler git
 RUN gem install watir
 
 ADD xvfb-firefox /usr/bin/xvfb-firefox
